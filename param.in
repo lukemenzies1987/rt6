@@ -1,0 +1,77 @@
+&parameters
+   a=2.876
+   temp=623.0
+   seng=1.95E03
+   Ev=2.12
+   mnum=20
+   xnum=20
+   m0=4
+   D0He=1.0E-06
+   D0i=1.0E-06
+   D0v=5.0E-05
+   vol=1.205E-29
+   nui=1.0E21
+   rhod=1.0E13
+   ksqGb=2.4E12
+   Emv=0.67
+   Emi=0.06
+   EmHe=0.05
+   AHe=0.0
+   epsilonr=0.5
+   epsilonv=0.0
+   epsiloni=0.05
+   Gdpa=1.84E-7
+   nuHe=1.0E20
+   ZHe=1.0
+   Zv=1.0
+   Zi=1.04
+   initt=0.0
+   dt=0.002
+   tmax=8.33E+04
+   Rg=2.5E-06
+   l=2.5E-06
+   disabs=1.0E-09
+   rcap=1.0E-09
+   maxgv=15
+   g00=5.0
+   g11=4.5
+&end
+&init
+   filename='bindingengdata.dat'
+   Cv0=1.7 
+   Ci0=0.0
+   GHe=0.0
+   Geni=0.0
+   Gv=0.0  
+&end
+&grouping
+   srtgrpx=20
+   srtgrpm=20
+   gxw=1
+   gmw=1
+   dr=0.1E-09
+   drm=0.1E-09
+&end
+&timestep
+   dt0=1.E-3
+   dtmax=0.1
+   dtconvrt=0.0001
+&end
+&tolerance
+   rtol=1.0E-5
+   atolCv=1.0E-10
+   atolCi=1.0E-14
+   atolCHe=1.0E-18
+   atolCGb= 1.0E-11
+   atolCg=1.0E-14
+   atolClusters=1.0E-40
+&end
+&settings
+   flaggrouping=0
+   flagEbtable=0
+   flagstatictimestep=0
+   flagvaryingtimestep=1
+   flagVoids=0
+   flagClusters=1
+   flagsinkstrengthcorrection=0
+&end
